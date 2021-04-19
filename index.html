@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>MATCH!</title>
+</head>
+<body>
+    <table >
+        <tr>
+            <td>
+                <button onclick = "match(this.id)" id = "b1">
+                    <img id = "i1" src="./img/1.PNG" alt="">
+                </button>
+            </td>
+            <td><button onclick = "match(this.id)" id = "b2"><img id = "i2" src="./img/2.PNG" alt=""/></button></td>
+            <td><button onclick = "match(this.id)" id = "b3"><img id = "i3" src="./img/3.PNG" alt=""/></button></td>
+            <td><button onclick = "match(this.id)" id="b4"><img id = "i4" src="./img/4.PNG" alt=""/></button></td>
+        </tr>
+        <tr>
+            <td><button onclick = "match(this.id)" id = "b5"><img id = "i5" src="./img/5.PNG" alt=""/></button></td>
+            <td><button onclick = "match(this.id)" id = "b6"><img id = "i6" src="./img/6.PNG" alt=""/></button></td>
+            <td><button onclick = "match(this.id)" id = "b7"><img id = "i7" src="./img/7.PNG" alt=""/></button></td>
+            <td><button onclick = "match(this.id)" id = "b8"><img id = "i8" src="./img/8.PNG" alt=""/></button></td>
+        </tr>
+        <tr>
+            <td><button onclick = "match(this.id)" id = "b9"><img id = "i9" src="./img/9.PNG" alt=""/></button></td>
+            <td><button onclick = "match(this.id)" id = "b10"><img id = "i10" src="./img/10.PNG" alt=""/></button></td>
+            <td><button onclick = "match(this.id)" id = "b11"><img id = "i11" src="./img/11.PNG" alt=""/></button></td>
+            <td><button onclick = "match(this.id)" id = "b12"><img id = "i12" src="./img/12.PNG" alt=""/></button></td>
+        </tr>
+        <tr>
+            <td><button onclick = "match(this.id)" id = "b13"><img id = "i13" src="./img/13.PNG" alt=""/></button></td>
+            <td><button onclick = "match(this.id)" id = "b14"><img id = "i14" src="./img/14.PNG" alt=""/></button></td>
+            <td><button onclick = "match(this.id)" id = "b15"><img id = "i15" src="./img/15.PNG" alt=""/></button></td>
+            <td><button onclick = "match(this.id)" id = "b16"><img id = "i16" src="./img/16.PNG" alt=""/></button></td>
+        </tr>
+        <tr>
+            <td><button onclick = "match(this.id)" id = "b17"><img id = "i17" src="./img/17.PNG" alt=""/></button></td>
+            <td><button onclick = "match(this.id)" id = "b18"><img id = "i18" src="./img/18.PNG" alt=""/></button></td>
+            <td><button onclick = "match(this.id)" id = "b19"><img id = "i19" src="./img/19.PNG" alt=""/></button></td>
+            <td><button onclick = "match(this.id)" id = "b20"><img id = "i20" src="./img/20.PNG" alt=""/></button></td>
+        </tr>
+        <tr>
+            <td><button onclick = "match(this.id)" id = "b21"><img id = "i21" src="./img/21.PNG" alt=""/></button></td>
+            <td><button onclick = "match(this.id)" id = "b22"><img id = "i22" src="./img/22.PNG" alt=""/></button></td>
+            <td><button onclick = "match(this.id)" id = "b23"><img id = "i23" src="./img/23.PNG" alt=""/></button></td>
+            <td><button onclick = "match(this.id)" id = "b24"><img id = "i24" src="./img/24.PNG" alt=""/></button></td>
+        </tr>
+    </table>
+    Easy: <input type="radio" name="diff" value = "easy" id="easy"/>
+    Medium: <input type="radio" name="diff" value = "med" id="med"/>
+    Hard: <input type="radio" name="diff" value = "hard" id="hard"/>
+    <h1>HOW MANY PICTURES</h1>
+    16: <input type="radio" name = "num" value = "16" id = "lowpic"/>
+    20: <input type="radio" name = "num" value = "20" id = "medpic"/>
+    24: <input type="radio" name = "num" value = "24" id = "hipic"/>
+
+    <button id = "play" onclick= "setTimeout(showCards, 0); setTimeout(hideCards, getTime()); setTimeout(reset,gameOver());">PLAY NOW</button>
+    <script src="script.js"></script>
+</body>
+</html>
